@@ -13,32 +13,40 @@ body {
 }
 
 /* Header */
+/* Header */
 header {
-  background: #16a34a; /* verde */
+  background: #16a34a; 
   color: #fff;
   padding: 15px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* deixa o menu à esquerda */
   align-items: center;
+  position: relative;           /* necessário para centralizar #nome */
 }
 
-header h1 {
+/* Nome centralizado */
+#nome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }
 
-header h1 p {
-  font-size: 0.9rem;
-  font-weight: normal;
-}
 
-/* Ícone menu */
+
+/* Botão menu à direita */
 .menu-icon {
+  margin-left: auto;  /* empurra o botão para a direita */
   font-size: 1.5rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
 }
+
 
 /* Menu lateral */
 .menu {
@@ -97,6 +105,7 @@ main p {
   margin: 0 auto 20px;
   font-size: 1.1rem;
   color: #555;
+
 }
 
 #title {
@@ -159,5 +168,8 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+
+
 
 
