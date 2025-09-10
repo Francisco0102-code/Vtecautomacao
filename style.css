@@ -170,6 +170,24 @@ body {
 }
 
 
+button {
+      background: #fff;
+      color: #2575fc;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #2575fc;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
 
 
 
